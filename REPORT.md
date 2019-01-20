@@ -34,12 +34,9 @@ UPDATE_EVERY = 4 # when to update the local network weights
 optimizer = ADAM
 ```
 
-
-
 ## Plot of Rewards
 
 ---
-
 
 ![Scores](results/scores_training.png)
 
