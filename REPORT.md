@@ -49,7 +49,7 @@ Environment solved in 397 episodes!	Average Score: 13.00
 ## Observations
 
 * Agent seems to get stuck if it collects all the yellow bananas in its near neighbourhood and is unable to escape the repetitive sequence of "back-and-forth" actions.
-* Keeping all other paramters fixed, `UPDATE_EVERY` was increased from 4 to 5 and yielded similar number of episodes to solve the task. However if it is set to 1, then the algorithm takes a long time to train (i.e. increasing the avg reward over the last 100 consecutive episodes) and does not seem to converge soon.
+* Keeping all other paramters fixed, `UPDATE_EVERY` was increased from 4 to 5 and yielded fewer number of episodes to solve the task. If it is set to 1, then the algorithm takes a long time to train (i.e. increasing the avg reward over the last 100 consecutive episodes) and does not seem to converge soon.
 
 ## Ideas for Future Work
 
@@ -58,6 +58,6 @@ Environment solved in 397 episodes!	Average Score: 13.00
   - The authors show that DQN overestimates the action-values and it may harm performance in practice. Furthermore they show how double Q-learning extended to deep neural networks can prevent such overestimation
 - [Dueling DQN](https://arxiv.org/abs/1511.06581)
   - The motivation behind trying this algorithm is that its  main benefit is to generalize learning across actions without imposing any change to the underlying reinforcement learning algorithm. Thus an experiment may be done where the same agent is used to interact with a similar environment as the Banana-environment. 
-  - [Prioritized Experience Replay](https://arxiv.org/abs/1511.05952)
-    - The idea behind using these technique for sampling from the replay buffer is that not all experiences are equal, some are more important than others in terms of reward, so naturally the agent should at least prioritize between the different experiences.
+- [Prioritized Experience Replay](https://arxiv.org/abs/1511.05952)
+  - The idea behind using these technique for sampling from the replay buffer is that not all experiences are equal, some are more important than others in terms of reward, so naturally the agent should at least prioritize between the different experiences.
 - Solve the same task given that the states are not 37 values but 2D images composed of many pixels. Naturally a different DNN architecture has to be used for the Q-Network, such as a CNN. Furthermore, all the above algorithms and techniques may also improve performance.
