@@ -6,7 +6,7 @@
 
 ### Objective
 
-Train an agent with the [DQN algorithm](https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf) to navigate and collect yellow bananas while avoiding blue bananas in a large, square world.
+Train an agent with the [DQN algorithm](https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf) to navigate a virtual world and collect as many yellow bananas as possible while avoiding blue bananas.
 
 <p align="center"><a href="https://github.com/plopd/navigation/blob/master/results/trained_agent.gif">
  <img width="512" height="256" src="https://github.com/plopd/navigation/blob/master/results/trained_agent.gif"></a>
