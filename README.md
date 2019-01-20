@@ -68,7 +68,7 @@ jupyter-notebook
     - Windows (32-bit): [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana_Windows_x86.zip)
     - Windows (64-bit): [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana_Windows_x86_64.zip)
 
-2. Place the file in the DRLND GitHub repository, in the root of this repo, and unzip (or decompress) the file. 
+2. Place the file in the root of this repo, and unzip (or decompress) the file. 
 
 ## Instructions
 
