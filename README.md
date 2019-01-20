@@ -26,6 +26,8 @@ The task is *discounted* and *episodic*, and in order to solve the environment, 
 
 ## Getting Started
 
+### Setup
+
 0. Clone the repository
 ```bash
 git clone https://github.com/plopd/navigation.git
@@ -72,7 +74,15 @@ jupyter-notebook
     - Windows (32-bit): [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana_Windows_x86.zip)
     - Windows (64-bit): [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana_Windows_x86_64.zip)
 
-2. Place the file in the root of this repo, and unzip (or decompress) the file. 
+2. Place the file in the root of this repo, and unzip (or decompress) the file.
+
+### Code
+
+The code is structured as follows:
+
+
+
+
 
 ## Instructions
 
