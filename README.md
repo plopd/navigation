@@ -1,14 +1,14 @@
 [//]: # (Image References)
 
-[image1]: https://github.com/plopd/deep-reinforcement-learning/blob/master/p1_navigation/results/trained_agent.gif "Trained Agent"
-
 # Navigation
 
 ## Project Details
 
-Train an agent to navigate and collect bananas in a large, square world.  
+Train an agent to navigate and collect yellow bananas while avoiding blue bananas in a large, square world.
 
-![Trained Agent][image1]
+<p align="center"><a href="https://github.com/plopd/deep-reinforcement-learning/blob/master/p1_navigation/results/trained_agent.gif">
+ <img width="512" height="256" src="https://github.com/plopd/deep-reinforcement-learning/blob/master/p1_navigation/results/trained_agent.gif"></a>
+</p>
 
 A reward of +1 is provided for collecting a yellow banana, and a reward of -1 is provided for collecting a blue banana.  Thus, the goal of your agent is to collect as many yellow bananas as possible while avoiding blue bananas.  
 
