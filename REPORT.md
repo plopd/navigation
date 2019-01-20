@@ -40,6 +40,7 @@ optimizer = ADAM
 
 ---
 
+
 ![Scores](results/scores_training.png)
 
 ```
