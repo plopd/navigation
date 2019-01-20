@@ -22,7 +22,11 @@ The task is episodic, and in order to solve the environment, your agent must get
 
 ## Getting Started
 
-0. Clone the repository.
+0. Clone the repository
+```bash
+git clone https://github.com/plopd/navigation.git
+cd navigation
+```
 
 1. Create and activate a new environment with Python 3.6.
 
@@ -41,8 +45,9 @@ The task is episodic, and in order to solve the environment, your agent must get
 	- Next, install the **classic control** environment group by following the instructions [here](https://github.com/openai/gym#classic-control).
 	- Then, install the **box2d** environment group by following the instructions [here](https://github.com/openai/gym#box2d).
 	
-3. Clone and install the openai-gym repository (**outside** of the navigation project directory)
+3. Clone and install the openai-gym repository
 ```bash
+cd ..
 git clone https://github.com/openai/gym.git
 cd gym
 pip install -e .
@@ -55,6 +60,7 @@ python -m ipykernel install --user --name navigation --display-name "navigation"
 
 5. Start (local) jupyter notebook server
 ```bash
+cd navigation
 jupyter-notebook
 ```
 
