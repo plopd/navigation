@@ -47,5 +47,12 @@ Environment solved in 397 episodes!	Average Score: 13.00
 
 ## Ideas for Future Work
 
-- Implement a [double DQN](https://arxiv.org/abs/1509.06461), a [dueling DQN](https://arxiv.org/abs/1511.06581), and [prioritized experience replay](https://arxiv.org/abs/1511.05952)
-- Solve the task given that the states are 2D images of the environment
+
+- [Double DQN](https://arxiv.org/abs/1509.06461)
+
+  - The authors show that DQN overestimates the action-values and it may harm performance in practice. Furthermore they show how double Q-learning extended to deep neural networks can prevent such overestimation
+- [Dueling DQN](https://arxiv.org/abs/1511.06581)
+  - The motivation behind trying this algorithm is that its  main benefit is to generalize learning across actions without imposing any change to the underlying reinforcement learning algorithm. Thus an experiment may be done where the same agent is used to interact with a similar environment as the Banana-environment. 
+  - [Prioritized Experience Replay](https://arxiv.org/abs/1511.05952)
+    - The idea behind using these technique for sampling from the replay buffer is that not all experiences are equal, some are more important than others in terms of reward, so naturally the agent should at least prioritize between the different experiences.
+- Solve the same task given that the states are not 37 values but 2D images composed of many pixels. Naturally a different DNN architecture has to be used for the Q-Network, such as a CNN. Furthermore, all the above algorithms and techniques may also improve performance.
