@@ -41,11 +41,7 @@ cd navigation
 	activate drlnd
 	```
 	
-2. Follow the instructions in [this repository](https://github.com/openai/gym) to perform a minimal install of OpenAI gym.  
-	- Next, install the **classic control** environment group by following the instructions [here](https://github.com/openai/gym#classic-control).
-	- Then, install the **box2d** environment group by following the instructions [here](https://github.com/openai/gym#box2d).
-	
-3. Clone and install the openai-gym repository
+2. Clone and install the openai-gym repository
 ```bash
 cd ..
 git clone https://github.com/openai/gym.git
@@ -53,12 +49,12 @@ cd gym
 pip install -e .
 ```
 
-4. Create an [IPython kernel](http://ipython.readthedocs.io/en/stable/install/kernel_install.html) for the `navigation` environment.  
+3. Create an [IPython kernel](http://ipython.readthedocs.io/en/stable/install/kernel_install.html) for the `navigation` environment.  
 ```bash
 python -m ipykernel install --user --name navigation --display-name "navigation"
 ```
 
-5. Start (local) jupyter notebook server
+4. Start (local) jupyter notebook server
 ```bash
 cd navigation
 jupyter-notebook
