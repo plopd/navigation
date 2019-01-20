@@ -22,9 +22,36 @@ The task is episodic, and in order to solve the environment, your agent must get
 
 ## Getting Started
 
-**1. Clone the DRLND Repository**
+0. Clone the repository
 
-[Follow the instructions in the DRLND GitHub repository](https://github.com/udacity/deep-reinforcement-learning#dependencies) to set up your Python environment. These instructions can be found in README.md at the root of the repository. By following these instructions, you will install PyTorch, the ML-Agents toolkit, and a few more Python packages required to complete the project.
+1. Create (and activate) a new environment with Python 3.6.**
+
+	- __Linux__ or __Mac__: 
+	```bash
+	conda create --name navigation python=3.6
+	source activate navigation
+	```
+	- __Windows__: 
+	```bash
+	conda create --name navigation python=3.6 
+	activate drlnd
+	```
+	
+2. Follow the instructions in [this repository](https://github.com/openai/gym) to perform a minimal install of OpenAI gym.  
+	- Next, install the **classic control** environment group by following the instructions [here](https://github.com/openai/gym#classic-control).
+	- Then, install the **box2d** environment group by following the instructions [here](https://github.com/openai/gym#box2d).
+	
+3. Clone the repository (if you haven't already!), and navigate to the `python/` folder.  Then, install several dependencies.
+```bash
+git clone https://github.com/udacity/deep-reinforcement-learning.git
+cd deep-reinforcement-learning/python
+pip install .
+```
+
+4. Create an [IPython kernel](http://ipython.readthedocs.io/en/stable/install/kernel_install.html) for the `navigation` environment.  
+```bash
+python -m ipykernel install --user --name navigation --display-name "navigation"
+```
 
 **2. Download the Unity Environment**
 
