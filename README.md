@@ -56,7 +56,7 @@ python -m ipykernel install --user --name navigation --display-name "navigation"
 
 4. Start (local) jupyter notebook server
 ```bash
-cd navigation
+cd ../navigation
 jupyter-notebook
 ```
 
