@@ -1,8 +1,6 @@
 
 ## Learning Algorithm
 
----
-
 The agent is trained with the (Vanilla) [DQN algorithm](https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf). The full algorithm is described in the METHODS section of the paper.
 - We initialize the replay memory `D` to some capacity `N`.
 - We initialize the local Q-Network (which should approximate the true action-value function Q) with random weights (using PyTorch default weight initialization for any module).
@@ -36,8 +34,6 @@ optimizer = ADAM
 
 ## Plot of Rewards
 
----
-
 ![Scores](results/scores_training.png)
 
 ```
@@ -50,8 +46,6 @@ Environment solved in 397 episodes!	Average Score: 13.00
 ```
 
 ## Ideas for Future Work
-
----
 
 - Implement a [double DQN](https://arxiv.org/abs/1509.06461), a [dueling DQN](https://arxiv.org/abs/1511.06581), and [prioritized experience replay](https://arxiv.org/abs/1511.05952)
 - Solve the task given that the states are 2D images of the environment
