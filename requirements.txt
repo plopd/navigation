@@ -17,7 +17,6 @@ entrypoints==0.3
 future==0.17.1
 gast==0.2.1.post0
 grpcio==1.11.0
--e git+https://github.com/openai/gym.git@12e8b763d5dcda4962cbd17887d545f0eec6808a#egg=gym
 html5lib==0.9999999
 idna==2.8
 ipykernel==5.1.0
@@ -61,7 +60,7 @@ pytest==4.1.0
 python-dateutil==2.7.5
 pytz==2018.9
 PyVirtualDisplay==0.2.1
-PyYAML>=4.2b1
+PyYAML==4.2b1
 pyzmq==17.1.2
 qtconsole==4.4.3
 requests==2.21.0
