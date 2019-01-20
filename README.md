@@ -6,8 +6,8 @@
 
 Train an agent to navigate and collect yellow bananas while avoiding blue bananas in a large, square world.
 
-<p align="center"><a href="https://github.com/plopd/deep-reinforcement-learning/blob/master/p1_navigation/results/trained_agent.gif">
- <img width="512" height="256" src="https://github.com/plopd/deep-reinforcement-learning/blob/master/p1_navigation/results/trained_agent.gif"></a>
+<p align="center"><a href="https://github.com/plopd/navigation/blob/master/results/trained_agent.gif">
+ <img width="512" height="256" src="https://github.com/plopd/navigation/blob/master/results/trained_agent.gif"></a>
 </p>
 
 A reward of +1 is provided for collecting a yellow banana, and a reward of -1 is provided for collecting a blue banana.  Thus, the goal of your agent is to collect as many yellow bananas as possible while avoiding blue bananas.  
@@ -34,7 +34,7 @@ The task is episodic, and in order to solve the environment, your agent must get
     - Windows (32-bit): [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana_Windows_x86.zip)
     - Windows (64-bit): [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana_Windows_x86_64.zip)
 
-- Place the file in the DRLND GitHub repository, in the `p1_navigation/` folder, and unzip (or decompress) the file. 
+- Place the file in the DRLND GitHub repository, in the root of this repo, and unzip (or decompress) the file. 
 
 ## Instructions
 
