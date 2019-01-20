@@ -12,7 +12,7 @@ The agent is trained with the (Vanilla) [DQN algorithm](https://storage.googleap
 - It uses these experience tuples to compute the targets by following a target (greedy) policy. The mean squared error between the target and expected action-values is computed and this TD-error is backpropagated in the *local* Q-Network so to update the weights using one step of SGD.
 - Next, we update the *target* Q-Network weights by making a copy of the current weights of the local Q-Network.
 
-**Architecture Neural Network Q-function**
+**Architecture of Neural Network for the Q-function**
 
 - input size = 37
 - output size = 4
@@ -28,8 +28,9 @@ BATCH_SIZE = 64 # batch-size
 GAMMA = 0.99 # discount factor
 TAU = 1e-3 # soft-update factor (when updating the target network weights) 
 LR = 5e-4 # learning rate for SGD
-UPDATE_EVERY = 4 # when to update the local network weights
-optimizer = ADAM
+UPDATE_EVERY = 5 # when to update the local network weights
+optimizer = ADAM (all hyper-parameters are fixed, except learning rate changed - see above)
+seed = 0 # for reproducibility
 ```
 
 ## Plot of Rewards
@@ -45,11 +46,15 @@ Episode 497	Average Score: 13.00
 Environment solved in 397 episodes!	Average Score: 13.00
 ```
 
+## Observations
+
+* Agent seems to get stuck if it collects all the yellow bananas in its near neighbourhood and is unable to escape the repetitive sequence of "back-and-forth" actions.
+* Keeping all other paramters fixed, `UPDATE_EVERY` was increased from 4 to 5 and yielded similar number of episodes to solve the task. However if it is set to 1, then the algorithm takes a long time to train (i.e. increasing the avg reward over the last 100 consecutive episodes) and does not seem to converge soon.
+
 ## Ideas for Future Work
 
 
 - [Double DQN](https://arxiv.org/abs/1509.06461)
-
   - The authors show that DQN overestimates the action-values and it may harm performance in practice. Furthermore they show how double Q-learning extended to deep neural networks can prevent such overestimation
 - [Dueling DQN](https://arxiv.org/abs/1511.06581)
   - The motivation behind trying this algorithm is that its  main benefit is to generalize learning across actions without imposing any change to the underlying reinforcement learning algorithm. Thus an experiment may be done where the same agent is used to interact with a similar environment as the Banana-environment. 

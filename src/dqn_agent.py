@@ -13,7 +13,7 @@ BATCH_SIZE = 64
 GAMMA = 0.99
 TAU = 1e-3
 LR = 5e-4
-UPDATE_EVERY = 4  # UPDATE FREQUENCY: how often to update the local network
+UPDATE_EVERY = 5  # UPDATE FREQUENCY: how often to update the local network
 
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
