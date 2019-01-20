@@ -22,9 +22,9 @@ The task is episodic, and in order to solve the environment, your agent must get
 
 ## Getting Started
 
-0. Clone the repository
+0. Clone the repository.
 
-1. Create (and activate) a new environment with Python 3.6.
+1. Create and activate a new environment with Python 3.6.
 
 	- __Linux__ or __Mac__: 
 	```bash
@@ -41,11 +41,11 @@ The task is episodic, and in order to solve the environment, your agent must get
 	- Next, install the **classic control** environment group by following the instructions [here](https://github.com/openai/gym#classic-control).
 	- Then, install the **box2d** environment group by following the instructions [here](https://github.com/openai/gym#box2d).
 	
-3. Clone the repository (if you haven't already!), and navigate to the `python/` folder.  Then, install several dependencies.
+3. Clone and install the openai-gym repository (**outside** of the navigation project directory)
 ```bash
-git clone https://github.com/udacity/deep-reinforcement-learning.git
-cd deep-reinforcement-learning/python
-pip install .
+git clone https://github.com/openai/gym.git
+cd gym
+pip install -e .
 ```
 
 4. Create an [IPython kernel](http://ipython.readthedocs.io/en/stable/install/kernel_install.html) for the `navigation` environment.  
@@ -53,15 +53,20 @@ pip install .
 python -m ipykernel install --user --name navigation --display-name "navigation"
 ```
 
+5. Start (local) jupyter notebook server
+```bash
+jupyter-notebook
+```
+
 **2. Download the Unity Environment**
 
-- Download the environment from one of the links below. You need only select the environment that matches your operating system:
+1. Download the environment from one of the links below. You need only select the environment that matches your operating system:
     - Linux: [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana_Linux.zip)
     - Mac OSX: [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana.app.zip)
     - Windows (32-bit): [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana_Windows_x86.zip)
     - Windows (64-bit): [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana_Windows_x86_64.zip)
 
-- Place the file in the DRLND GitHub repository, in the root of this repo, and unzip (or decompress) the file. 
+2. Place the file in the DRLND GitHub repository, in the root of this repo, and unzip (or decompress) the file. 
 
 ## Instructions
 
