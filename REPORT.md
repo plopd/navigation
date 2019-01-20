@@ -34,7 +34,7 @@ optimizer = ADAM
 
 ## Plot of Rewards
 
-![Scores](results/scores_training.png)
+![Scores](./results/scores_training.png)
 
 ```
 Episode 100	Average Score: 1.05
