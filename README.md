@@ -24,7 +24,7 @@ The task is episodic, and in order to solve the environment, your agent must get
 
 0. Clone the repository
 
-1. Create (and activate) a new environment with Python 3.6.**
+1. Create (and activate) a new environment with Python 3.6.
 
 	- __Linux__ or __Mac__: 
 	```bash
