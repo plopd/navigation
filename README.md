@@ -80,10 +80,13 @@ jupyter-notebook
 
 The code is structured as follows:
 
-
-
-
+`checkpoints` - holds checkpoints of models for the agent
+`results` - camera-ready graphs and figures highlighting the results of the training
+`src` - agent and models used
+`utils` - useful code reusable for different agents (e.g. replay buffer)
+`Navigation.ipynb` - tutorial notebook to help users go through the training and testing pipeline
+`REPORT.md` - outlines details on the algorithms used to train the agent
 
 ## Instructions
 
-Follow the instructions in `Navigation.ipynb` to get started with training or watching a smart agent.
+Follow the instructions in `Navigation.ipynb` to get started with training and/or watching a smart agent.
