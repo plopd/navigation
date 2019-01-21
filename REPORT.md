@@ -46,9 +46,12 @@ Episode 497	Average Score: 13.00
 Environment solved in 397 episodes!	Average Score: 13.00
 ```
 
-## Observations
+## Observations/Issues
 
 * Agent seems to get stuck if it collects all the yellow bananas in its near neighbourhood and is unable to escape the repetitive sequence of "back-and-forth" actions.
+
+![Issue](./results/issue_blocked.gif)
+
 * Keeping all other paramters fixed, `UPDATE_EVERY` was increased from 4 to 5 and yielded fewer number of episodes to solve the task. If it is set to 1, then the algorithm takes a long time to train (i.e. increasing the avg reward over the last 100 consecutive episodes) and does not seem to converge soon.
 
 ## Ideas for Future Work
