@@ -25,7 +25,8 @@ The *state* space has 37 dimensions and contains the agent's velocity, along wit
 Note on the 37 dimensional state vector (cf. [iandanforth](https://github.com/Unity-Technologies/ml-agents/issues/1134#issuecomment-417497502))
 
 ```
-The state space has 37 dimensions and contains the agent's velocity, along with ray-based perception of objects around agent's forward direction.
+The state space has 37 dimensions and contains the agent's velocity, 
+along with ray-based perception of objects around agent's forward direction.
 
 Ray Perception (35)
 
@@ -34,7 +35,9 @@ Ray Perception (35)
 
 Ray (5)
 
-Each ray is projected into the scene. If it encounters one of four detectable objects the value at that position in the array is set to 1. Finally there is a distance measure which is a fraction of the ray length.
+Each ray is projected into the scene. 
+If it encounters one of four detectable objects the value at that position in the array is set to 1. 
+Finally there is a distance measure which is a fraction of the ray length.
 [Banana, Wall, BadBanana, Agent, Distance]
 
 example
