@@ -14,10 +14,10 @@ Train an agent with the [DQN algorithm](https://storage.googleapis.com/deepmind-
 
 ### Background
 
-**Reward**
+**Reward:**
 of +1 is provided for collecting a yellow banana, and a reward of -1 is provided for collecting a blue banana.  Thus, the goal of the agent is to collect as many yellow bananas as possible while avoiding blue bananas.  
 
-**State**
+**State:**
 has 37 dimensions and contains the agent's velocity, along with ray-based perception of objects around agent's forward direction.  Given this information, the agent has to learn how to best select actions.
 
 Excerpt from cf. [iandanforth](https://github.com/Unity-Technologies/ml-agents/issues/1134#issuecomment-417497502)
@@ -47,15 +47,15 @@ Left/right velocity (usually near 0)
 Forward/backward velocity (0-11.2)
 ```
 
-**Actions**
+**Actions:**
 are four and discrete, corresponding to:
 - **`0`** - move forward.
 - **`1`** - move backward.
 - **`2`** - turn left.
 - **`3`** - turn right.
 
-**Termination**
-Episode terminates after 300 time steps.
+**Termination:**
+after 300 time steps.
 
 The task is *discounted* and *episodic*, and in order to solve the environment, the agent must get an average score of +13 over 100 consecutive episodes.
 
