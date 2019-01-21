@@ -54,6 +54,9 @@ are four and discrete, corresponding to:
 - **`2`** - turn left.
 - **`3`** - turn right.
 
+**Termination**
+Episode terminates after 300 time steps.
+
 The task is *discounted* and *episodic*, and in order to solve the environment, the agent must get an average score of +13 over 100 consecutive episodes.
 
 ## Getting Started
