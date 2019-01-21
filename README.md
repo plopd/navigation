@@ -22,6 +22,31 @@ The *state* space has 37 dimensions and contains the agent's velocity, along wit
 - **`2`** - turn left.
 - **`3`** - turn right.
 
+Note on the 37 dimensional state vector (cf. [iandanforth](https://github.com/Unity-Technologies/ml-agents/issues/1134#issuecomment-417497502))
+
+```
+The state space has 37 dimensions and contains the agent's velocity, along with ray-based perception of objects around agent's forward direction.
+
+Ray Perception (35)
+
+7 rays projecting from the agent at the following angles (and returned in this order):
+[20, 90, 160, 45, 135, 70, 110] # 90 is directly in front of the agent
+
+Ray (5)
+
+Each ray is projected into the scene. If it encounters one of four detectable objects the value at that position in the array is set to 1. Finally there is a distance measure which is a fraction of the ray length.
+[Banana, Wall, BadBanana, Agent, Distance]
+
+example
+[0, 1, 1, 0, 0.2]
+
+There is a BadBanana detected 20% of the way along the ray and a wall behind it.
+
+Velocity of Agent (2)
+Left/right velocity (usually near 0)
+Forward/backward velocity (0-11.2)
+```
+
 The task is *discounted* and *episodic*, and in order to solve the environment, the agent must get an average score of +13 over 100 consecutive episodes.
 
 ## Getting Started
