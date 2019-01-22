@@ -79,7 +79,7 @@ cd navigation
 	- __Windows__: 
 	```bash
 	conda create --name navigation python=3.6 
-	activate drlnd
+	activate navigation
 	```
 	
 2. Clone and install the openai-gym repository
